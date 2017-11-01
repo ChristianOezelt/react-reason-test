@@ -1,1 +1,1 @@
-src/app.cmj :
+src/app.cmj : src/module.cmj

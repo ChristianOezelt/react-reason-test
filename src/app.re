@@ -2,6 +2,9 @@
 
 [@bs.module] external logo : string = "./logo.svg";
 
+include Module;
+include String;
+
 let component = ReasonReact.statelessComponent("App");
 
 let make = (~message, _children) => {
@@ -16,6 +19,9 @@ let make = (~message, _children) => {
         (ReasonReact.stringToElement("To get started, edit"))
         <code> (ReasonReact.stringToElement(" src/App.re ")) </code>
         (ReasonReact.stringToElement("and save to reload."))
+      </p>
+      <p>
+        (ReasonReact.stringToElement( Module.asdf ))
       </p>
     </div>
 };
